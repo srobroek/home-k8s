@@ -7,3 +7,4 @@ metadata:
 data:
   NAS_ADDR: "172.20.11.2"
   NAS_MEDIA_PATH: "/mnt/tank/uncompressed/media"
+  METALLB_ARP_RANGE: "172.20.11.240-172.20.11.250"
