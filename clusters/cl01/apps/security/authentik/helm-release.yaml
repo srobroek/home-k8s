@@ -87,7 +87,4 @@ spec:
         storageClass: rook-ceph-block
         accessModes:
           - ReadWriteOnce
-      postgresqlUsername: authentik
-      postgresqlDatabase: authentik
-      postgresqlPassword: ${SECRET_AUTHENTIK_POSTGRES_PASSWORD}
         
