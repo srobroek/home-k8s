@@ -21,8 +21,6 @@ spec:
     logLevel: debug
     provider: cloudflare
     env:
-      - name: CF_API_EMAIL
-        value: "${SECRET_EMAIL}"
       - name: CF_API_TOKEN
         value: ${SECRET_CF_API_TOKEN}"
     extraArgs:
