@@ -9,6 +9,7 @@ metadata:
     hajimari.io/enable: "true"
     hajimari.io/icon: "web"
     hajimari.io/appName: "traefik"
+    external-dns.alpha.kubernetes.io/hostname: "traefik.${SECRET_DOMAIN}"   
 spec:
   tls:
     - hosts:
