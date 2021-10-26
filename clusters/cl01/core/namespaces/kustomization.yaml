@@ -5,3 +5,4 @@ resources:
   - infra.yaml
   - networking.yaml
   - cert-manager.yaml
+  - security.yaml
