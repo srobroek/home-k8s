@@ -8,3 +8,4 @@ resources:
   - metallb.yaml
   - traefik.yaml
   - jetstack.yaml
+  - external-dns.yaml
