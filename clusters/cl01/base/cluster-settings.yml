@@ -5,4 +5,5 @@ metadata:
   namespace: flux-system
   name: cluster-settings
 data:
-  GATEWAY_ADDR: "192.168.1.1"
+  NAS_ADDR: "172.20.11.1"
+  NAS_MEDIA_PATH: "/mnt/tank/uncompressed/media"
