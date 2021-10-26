@@ -6,4 +6,3 @@ metadata:
   name: cluster-settings
 data:
   GATEWAY_ADDR: "192.168.1.1"
-  BLA: "bla"
