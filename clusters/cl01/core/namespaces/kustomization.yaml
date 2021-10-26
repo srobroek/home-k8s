@@ -4,3 +4,4 @@ resources:
   - media.yaml
   - infra.yaml
   - networking.yaml
+  - cert-manager.yaml
