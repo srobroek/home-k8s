@@ -1,14 +1,4 @@
----
 creation_rules:
-    - path_regex: provision/.*\.sops\.ya?ml
-      unencrypted_regex: ^(kind)$
-    # macbook, termux
-      pgp: >-
-          4481DD50972B86E883A37ECDBC75F73DD884DCFD,
-          7CC94DE4819CE6EB754AF76125537F25A94A0D5D
-    - path_regex: cluster/.*\.sops.ya?ml
+    - path_regex: ./clusters/.*\.ya?ml
       encrypted_regex: ^(data|stringData|(.*)credentials)$
-    # flux, macbook, termux
-      pgp: >-
-          4481DD50972B86E883A37ECDBC75F73DD884DCFD,
-          7CC94DE4819CE6EB754AF76125537F25A94A0D5D
+      pgp: 4481DD50972B86E883A37ECDBC75F73DD884DCFD, 7CC94DE4819CE6EB754AF76125537F25A94A0D5D
