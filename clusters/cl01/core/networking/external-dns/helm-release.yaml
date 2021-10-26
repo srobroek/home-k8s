@@ -22,7 +22,7 @@ spec:
     provider: cloudflare
     env:
       - name: CF_API_TOKEN
-        value: ${SECRET_CF_API_TOKEN}"
+        value: "${SECRET_CF_API_TOKEN}"
     extraArgs:
       - --cloudflare-proxied
       - --annotation-filter=external-dns/is-public in (true)
