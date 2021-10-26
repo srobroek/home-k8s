@@ -9,3 +9,4 @@ resources:
   - traefik.yaml
   - jetstack.yaml
   - external-dns.yaml
+  - authentik.yaml
