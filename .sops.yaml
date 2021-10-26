@@ -1,4 +1,4 @@
 creation_rules:
-    - path_regex: ./clusters/.*\.ya?ml
+    - path_regex: ./clusters/.*\.sops\.ya?ml
       encrypted_regex: ^(data|stringData|(.*)credentials)$
       pgp: 4481DD50972B86E883A37ECDBC75F73DD884DCFD, 7CC94DE4819CE6EB754AF76125537F25A94A0D5D
