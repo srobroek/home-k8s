@@ -40,7 +40,7 @@ spec:
           pathType: Prefix
 
       tls:
-      - secretName: tls.authentik
+      - secretName: "authentik.${SECRET_DOMAIN/./-}-tls"
         hosts:
         - auth.${SECRET_DOMAIN}
 

@@ -47,7 +47,7 @@ spec:
         tls:
           - hosts:
               - "sonarr.${SECRET_DOMAIN}"
-            secretName: "${SECRET_DOMAIN/./-}-tls"              
+            secretName: "sonarr.${SECRET_DOMAIN/./-}-tls"           
     podSecurityContext:
       supplementalGroups:
         - 100
