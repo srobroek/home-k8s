@@ -32,7 +32,7 @@ spec:
           hajimari.io/enable: "true"
           hajimari.io/icon: "cloud-search"
 
-#          traefik.ingress.kubernetes.io/router.middlewares: "networking-external-auth@kubernetescrd" 
+          traefik.ingress.kubernetes.io/router.middlewares: "networking-external-auth@kubernetescrd" 
           traefik.ingress.kubernetes.io/router.entrypoints: "websecure"    
 
           cert-manager.io/cluster-issuer: letsencrypt-production
