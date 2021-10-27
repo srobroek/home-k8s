@@ -39,24 +39,24 @@ spec:
       #   - name: HDHomeRun
       #     url: "http://192.168.150.30"
       #     icon: "antenna"
-      groups: []
-        # - name: Communicate
-        #   links:
-        #     - name: Discord
-        #       url: "https://discord.com"
-        #     - name: Gmail
-        #       url: "https://gmail.com"
-        #     - name: Slack
-        #       url: "https://slack.com/signin"
-        # - name: Cloud
-        #   links:
-        #     - name: Cloudflare
-        #       url: "https://dash.cloudflare.com"
-        #     - name: Dropbox
-        #       url: "https://dropbox.com"
-        #     - name: Drive
-        #       url: "https://drive.google.com"
-        # - name: Design
+      groups: 
+        - name: Work
+          links:
+            - name: Mail (Work)
+              url: "https://mail.vmware.com"
+            - name: Workspace One
+              url: "https://login.vmware.com"
+            - name: Slack
+              url: "https://vmware.slack.com"
+        - name: Services
+          links:
+            - name: Cloudflare
+              url: "https://dash.cloudflare.com"
+            - name: transip
+              url: "https://transip.nl"
+            - name: Office365
+              url: "https://outlook.office365.com/"
+        # - name: Coll
         #   links:
         #     - name: Awwwards
         #       url: "https://awwwards.com"
