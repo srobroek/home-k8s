@@ -22,23 +22,23 @@ spec:
       TZ: "${TZ}"
     hajimari:
       defaultEnable: false
-      namespaceSelector:
-        matchNames:
-          - home
-          - media
-          - security
-          - networking
+      # namespaceSelector:
+      #   matchNames:
+      #     - home
+      #     - media
+      #     - security
+      #     - networking
       name: "Sjors"
-      customApps:
-        - name: Valetudo
-          url: "http://192.168.1.28"
-          icon: "robot-vacuum"
-        - name: PiAware
-          url: "http://192.168.150.25:8080"
-          icon: "airplane"
-        - name: HDHomeRun
-          url: "http://192.168.150.30"
-          icon: "antenna"
+      # customApps:
+      #   - name: Valetudo
+      #     url: "http://192.168.1.28"
+      #     icon: "robot-vacuum"
+      #   - name: PiAware
+      #     url: "http://192.168.150.25:8080"
+      #     icon: "airplane"
+      #   - name: HDHomeRun
+      #     url: "http://192.168.150.30"
+      #     icon: "antenna"
       groups:
         - name: Communicate
           links:
