@@ -5,13 +5,20 @@ metadata:
   name: traefik-dashboard
   namespace: networking
   annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: "websecure"
     hajimari.io/enable: "true"
     hajimari.io/icon: "web"
     hajimari.io/appName: "traefik"
-    external-dns.alpha.kubernetes.io/target: "home.${SECRET_DOMAIN}"
+
+    traefik.ingress.kubernetes.io/router.middlewares: "networking-external-auth@kubernetescrd" 
+    traefik.ingress.kubernetes.io/router.entrypoints: "websecure"    
+
+    cert-manager.io/cluster-issuer: letsencrypt-production
+    kubernetes.io/tls-acme: "true"
+    
     external-dns/is-public: "true"
-    traefik.ingress.kubernetes.io/router.middlewares: "networking-external-auth@kubernetescrd"    
+    external-dns.alpha.kubernetes.io/target: "home.${SECRET_DOMAIN}"
+   
+
 spec:
   tls:
     - hosts:
