@@ -32,7 +32,7 @@ metadata:
   namespace: home
   annotations:
     hajimari.io/enable: "true"
-    hajimari.io/icon: "web"
+    hajimari.io/icon: "home"
     hajimari.io/appName: "hass"
 
 #    traefik.ingress.kubernetes.io/router.middlewares: "networking-external-auth@kubernetescrd" 
