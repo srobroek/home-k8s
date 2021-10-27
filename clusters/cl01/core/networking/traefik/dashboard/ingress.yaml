@@ -35,10 +35,4 @@ spec:
                 name: traefik
                 port:
                   number: 9000
-          - path: /akprox
-            pathType: Prefix
-            backend: 
-              service:
-                name: authentik-embedded-outpost.security
-                port:
-                  number: 9000
+
