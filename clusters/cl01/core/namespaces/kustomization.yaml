@@ -6,3 +6,4 @@ resources:
   - networking.yaml
   - cert-manager.yaml
   - security.yaml
+  - home.yaml

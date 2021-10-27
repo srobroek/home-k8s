@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hass-external
+  namespace: home
   ports:
     - name: http
       protocol: TCP
@@ -15,7 +16,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: hass-external
-  namespace: networking
+  namespace: home
   annotations:
     hajimari.io/enable: "true"
     hajimari.io/icon: "web"
