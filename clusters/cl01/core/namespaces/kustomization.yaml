@@ -7,3 +7,4 @@ resources:
   - cert-manager.yaml
   - security.yaml
   - home.yaml
+  - tools.yaml
