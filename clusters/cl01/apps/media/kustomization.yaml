@@ -6,3 +6,4 @@ resources:
   - radarr
   - prowlarr
   - qbittorrent
+  - overseerr
