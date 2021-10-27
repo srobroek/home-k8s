@@ -29,7 +29,7 @@ spec:
           - security
           - networking
       name: "Sjors"
-      # customApps:
+      customApps:
       #   - name: Valetudo
       #     url: "http://192.168.1.28"
       #     icon: "robot-vacuum"
