@@ -25,7 +25,7 @@ spec:
         ingressClassName: "traefik"
         annotations:
           hajimari.io/enable: "true"
-          hajimari.io/icon: "television-box"
+          hajimari.io/icon: "movie"
 
           traefik.ingress.kubernetes.io/router.middlewares: "networking-external-auth@kubernetescrd" 
           traefik.ingress.kubernetes.io/router.entrypoints: "websecure"    

@@ -26,7 +26,8 @@ spec:
       ingressClassName: "traefik"
       annotations:
 
-
+        hajimari.io/enable: "true"
+        hajimari.io/icon: "axis-arrow-lock"
         cert-manager.io/cluster-issuer: letsencrypt-production
         traefik.ingress.kubernetes.io/router.entrypoints: "websecure"
         kubernetes.io/tls-acme: "true"
