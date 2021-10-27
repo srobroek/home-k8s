@@ -22,12 +22,12 @@ spec:
       TZ: "${TZ}"
     hajimari:
       defaultEnable: false
-      # namespaceSelector:
-      #   matchNames:
-      #     - home
-      #     - media
-      #     - security
-      #     - networking
+      namespaceSelector:
+        matchNames:
+          - home
+          - media
+          - security
+          - networking
       name: "Sjors"
       # customApps:
       #   - name: Valetudo
