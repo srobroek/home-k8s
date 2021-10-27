@@ -48,11 +48,10 @@ spec:
           - host: "forecastle.${SECRET_DOMAIN}"
             paths:
               - path: /
-                pathType: Prefix
+
           - host: "services.${SECRET_DOMAIN}"
             paths:
-              - path: /
-                pathType: Prefix                  
+              - path: /               
         tls:
           - hosts:
               - "forecastle.${SECRET_DOMAIN}"
