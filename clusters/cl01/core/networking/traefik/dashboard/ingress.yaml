@@ -31,10 +31,14 @@ spec:
           - path: /
             pathType: Prefix
             backend:
-              serviceName: traefik
-              servicePort: 9000
+              service:
+                name: traefik
+                port:
+                  number: 9000
           - path: /akprox
             pathType: Prefix
             backend: 
-              serviceName: authentik-embedded-outpost
-              servicePort: 9000
+              service:
+                name: authentik-embedded-outpost
+              port:
+                number: 9000
