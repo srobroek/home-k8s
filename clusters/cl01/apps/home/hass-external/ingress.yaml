@@ -4,8 +4,25 @@ metadata:
   name: hass-external
   namespace: home
 spec:
-  type: ExternalName
-  externalName: hass.int.vxsan.com
+  ports:
+  - name: hass
+    port: 8123
+    protocol: TCP
+    targetPort: 8123
+  clusterIP: None
+  type: ClusterIP
+---
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: hass-external
+subsets:
+- addresses:
+  - ip: 172.20.14.9
+  ports:
+  - name: hass
+    port: 8123
+    protocol: TCP
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
