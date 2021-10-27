@@ -7,3 +7,5 @@ resources:
   - secret.sops.yaml
   - basic-auth.yaml
   - authentik.yaml
+  - external-auth.yaml
+  - internal-auth.yaml
