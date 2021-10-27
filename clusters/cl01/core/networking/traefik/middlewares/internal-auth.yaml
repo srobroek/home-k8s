@@ -1,5 +1,3 @@
-          traefik.ingress.kubernetes.io/router.middlewares: "network-internal-auth@kubernetescrd"
-
 ---
 apiVersion: traefik.containo.us/v1alpha1
 kind: Middleware
