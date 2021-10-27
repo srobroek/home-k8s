@@ -19,7 +19,7 @@ spec:
       interval: 5m
   values:
     controllerType: deployment
-    image:
+
 
     env:
       TZ: "${TZ}"
