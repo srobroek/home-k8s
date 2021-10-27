@@ -19,7 +19,7 @@ jobs:
           flux install --version="${VERSION}" \
             --components-extra=image-reflector-controller,image-automation-controller \
             --network-policy=false \
-            --export > ./cluster/base/flux-system/gotk-components.yaml
+            --export > ./clusters/cl01/base/flux-system/gotk-components.yaml
           echo "::set-output name=flux_version::$VERSION"
       - uses: peter-evans/create-pull-request@v3
         with:
