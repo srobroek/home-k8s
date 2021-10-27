@@ -33,7 +33,7 @@ metadata:
   annotations:
     hajimari.io/enable: "true"
     hajimari.io/icon: "web"
-    hajimari.io/appName: "traefik"
+    hajimari.io/appName: "hass"
 
 #    traefik.ingress.kubernetes.io/router.middlewares: "networking-external-auth@kubernetescrd" 
     traefik.ingress.kubernetes.io/router.entrypoints: "websecure"    
