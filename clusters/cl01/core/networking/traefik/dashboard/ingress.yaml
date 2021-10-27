@@ -40,5 +40,5 @@ spec:
             backend: 
               service:
                 name: authentik-embedded-outpost
-              port:
-                number: 9000
+                port:
+                  number: 9000
