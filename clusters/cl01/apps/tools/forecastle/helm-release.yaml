@@ -28,33 +28,33 @@ spec:
             - networking
             - security
       ingress:
-        main:
-          enabled: true
-          ingressClassName: "traefik"
-          annotations:
-            hajimari.io/enable: "true"
-            hajimari.io/icon: "cloud-search"
 
-            traefik.ingress.kubernetes.io/router.middlewares: "networking-external-auth@kubernetescrd" 
-            traefik.ingress.kubernetes.io/router.entrypoints: "websecure"    
+        enabled: true
+        ingressClassName: "traefik"
+        annotations:
+          hajimari.io/enable: "true"
+          hajimari.io/icon: "cloud-search"
 
-            cert-manager.io/cluster-issuer: letsencrypt-production
-            kubernetes.io/tls-acme: "true"
+          traefik.ingress.kubernetes.io/router.middlewares: "networking-external-auth@kubernetescrd" 
+          traefik.ingress.kubernetes.io/router.entrypoints: "websecure"    
+
+          cert-manager.io/cluster-issuer: letsencrypt-production
+          kubernetes.io/tls-acme: "true"
+          
+          external-dns/is-public: "true"
+          external-dns.alpha.kubernetes.io/target: "home.${SECRET_DOMAIN}"         
             
-            external-dns/is-public: "true"
-            external-dns.alpha.kubernetes.io/target: "home.${SECRET_DOMAIN}"         
-              
-          hosts:
-            - host: "forecastle.${SECRET_DOMAIN}"
-              paths:
-                - path: /
-                  pathType: Prefix
-            - host: "services.${SECRET_DOMAIN}"
-              paths:
-                - path: /
-                  pathType: Prefix                  
-          tls:
-            - hosts:
-                - "forecastle.${SECRET_DOMAIN}"
-                - "services.${SECRET_DOMAIN}"
-              secretName: "forecastle.${SECRET_DOMAIN/./-}-tls"   
+        hosts:
+          - host: "forecastle.${SECRET_DOMAIN}"
+            paths:
+              - path: /
+                pathType: Prefix
+          - host: "services.${SECRET_DOMAIN}"
+            paths:
+              - path: /
+                pathType: Prefix                  
+        tls:
+          - hosts:
+              - "forecastle.${SECRET_DOMAIN}"
+              - "services.${SECRET_DOMAIN}"
+            secretName: "forecastle.${SECRET_DOMAIN/./-}-tls"   
