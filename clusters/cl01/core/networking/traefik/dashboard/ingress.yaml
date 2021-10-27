@@ -23,7 +23,7 @@ spec:
   tls:
     - hosts:
         - "traefik.${SECRET_DOMAIN}"
-      secretName: "sonarr.${SECRET_DOMAIN/./-}-tls"
+      secretName: "traefik.${SECRET_DOMAIN/./-}-tls"
   rules:
     - host: "traefik.${SECRET_DOMAIN}"
       http:
