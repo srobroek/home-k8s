@@ -2,14 +2,14 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: sonarr
+  name: radarr
   namespace: media
 spec:
   interval: 5m
   chart:
     spec:
       # renovate: registryUrl=https://k8s-at-home.com/charts/
-      chart: sonarr
+      chart: radarr
       version: 15.1.0
       sourceRef:
         kind: HelmRepository
@@ -17,9 +17,6 @@ spec:
         namespace: flux-system
       interval: 5m
   values:
-    image:
-      repository: ghcr.io/k8s-at-home/sonarr
-      tag: v3.0.6.1342
     env:
       TZ: "${TZ}"
     ingress:
@@ -40,14 +37,14 @@ spec:
           external-dns.alpha.kubernetes.io/target: "home.${SECRET_DOMAIN}"         
             
         hosts:
-          - host: "sonarr.${SECRET_DOMAIN}"
+          - host: "radarr.${SECRET_DOMAIN}"
             paths:
               - path: /
                 pathType: Prefix
         tls:
           - hosts:
-              - "sonarr.${SECRET_DOMAIN}"
-            secretName: "sonarr.${SECRET_DOMAIN/./-}-tls"           
+              - "radarr.${SECRET_DOMAIN}"
+            secretName: "radarr.${SECRET_DOMAIN/./-}-tls"           
     podSecurityContext:
       supplementalGroups:
         - 100
@@ -69,7 +66,7 @@ spec:
     persistence:
       config:
         enabled: true
-        existingClaim: sonarr-config-v1
+        existingClaim: radarr-config-v1
       media:
         enabled: true
         type: custom
