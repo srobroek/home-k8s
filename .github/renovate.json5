@@ -196,6 +196,15 @@
       "separateMinorPatch": true
     },
     {
+      "packageRules": [
+        {
+          "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+          "automerge": true
+        }
+      ]
+    }
+
+    {
       "matchDatasources": ["github-releases", "docker"],
       "matchPackagePatterns": [
         "external-snapshotter",
