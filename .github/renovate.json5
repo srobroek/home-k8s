@@ -202,7 +202,7 @@
           "automerge": true
         }
       ]
-    }
+    },
 
     {
       "matchDatasources": ["github-releases", "docker"],
