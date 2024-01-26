@@ -10,7 +10,7 @@ jobs:
   upgrade-flux:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: fluxcd/flux2/action@main
       - id: upgrade
         run: |
